@@ -63,7 +63,7 @@ const PopularProducts = () => {
         <p className="text-[#2D5016] font-normal mt-2">Discover our most popular gardening essentials</p>
 
         {/* Product Grid */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((item) => (
             <div
               key={item.id}
