@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
-// import { Menu, X, Search, ShoppingCart, User } from "lucide-react";
+import { PiShoppingCartSimpleFill } from "react-icons/pi";
+import { IoIosSearch, IoMdMenu } from "react-icons/io";
+import { FaUser, FaXmark } from "react-icons/fa6";
+import { BsTelephoneFill } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
-import { IoIosSearch } from "react-icons/io";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,11 +24,17 @@ const Navbar = () => {
         {/* Left: Logo */}
 
         <div className="flex items-center">
-          <Image src="/images/logo.png" className="mt-2 -mr-5" width={70} height={70} alt="logo" />
+          <Image
+            src="/images/logo.png"
+            className="mt-2 -mr-5"
+            width={70}
+            height={70}
+            alt="logo"
+          />
           <span className="text-white text-xl font-semibold">TriGardening</span>
         </div>
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center space-x-6">
+        <div className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -38,28 +46,25 @@ const Navbar = () => {
           ))}
 
           {/* Call Now Button */}
-          <Link
-            href="tel:+8801234567890"
-            className="bg-[#F59E0B] hover:bg-[#D97706] text-white px-4 py-2 rounded-md font-medium transition-colors"
-          >
+          <div className="bg-[#CC7722] hover:bg-[#D97706] text-white flex items-center gap-3 px-3 py-2 rounded-md font-medium transition-colors">
+            <BsTelephoneFill />
             Call Now
-          </Link>
+          </div>
 
           {/* Search bar */}
-          <div className="relative">
+          <div className="flex items-center justify-end">
             <input
               type="text"
               placeholder="Search plants, tools"
-              className="pl-10 pr-4 py-2 rounded-md text-gray-700 focus:outline-none w-60"
+              className="relative border border-white placeholder:text-white placeholder:text-base text-white px-3 py-1 rounded-full focus:outline-none"
             />
-            {/* <Search className="absolute left-3 top-2.5 text-gray-500 w-4 h-4" /> */}
-            <IoIosSearch/>
+            <IoIosSearch size={20} className="absolute mr-2 text-[#B7B7B7]" />
           </div>
 
           {/* Icons */}
           <div className="flex items-center space-x-4 ml-2">
-            {/* <ShoppingCart className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" />
-            <User className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" /> */}
+            <PiShoppingCartSimpleFill className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" />
+            <FaUser className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" />
           </div>
         </div>
 
@@ -68,7 +73,11 @@ const Navbar = () => {
           className="lg:hidden text-white"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {/* {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />} */}
+          {menuOpen ? (
+            <FaXmark className="w-6 h-6" />
+          ) : (
+            <IoMdMenu className="w-6 h-6" />
+          )}
         </button>
       </div>
 
@@ -87,25 +96,23 @@ const Navbar = () => {
           ))}
 
           <div className="flex flex-col gap-3">
-            <Link
-              href="tel:+8801234567890"
-              className="bg-[#F59E0B] hover:bg-[#D97706] text-center text-white py-2 rounded-md font-medium transition-colors"
-            >
+            <div className="bg-[#CC7722] hover:bg-[#D97706] text-white flex items-center gap-3 px-3 py-2 rounded-md font-medium transition-colors">
+              <BsTelephoneFill />
               Call Now
-            </Link>
+            </div>
 
-            <div className="relative">
+            <div className="flex items-center relative">
               <input
                 type="text"
                 placeholder="Search plants, tools"
-                className="pl-10 pr-4 py-2 rounded-md text-gray-700 focus:outline-none w-full"
+                className=" border border-white placeholder:text-white placeholder:text-base text-white px-3 py-1 rounded-full focus:outline-none"
               />
-              {/* <Search className="absolute left-3 top-2.5 text-gray-500 w-4 h-4" /> */}
+              <IoIosSearch size={20} className="absolute top-2 right-27 mr-2 text-[#B7B7B7]" />
             </div>
 
             <div className="flex items-center justify-center space-x-6 pt-2">
-              {/* <ShoppingCart className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" />
-              <User className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" /> */}
+              <PiShoppingCartSimpleFill className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" />
+              <FaUser className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" />
             </div>
           </div>
         </div>
