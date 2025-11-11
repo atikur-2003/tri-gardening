@@ -20,13 +20,13 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-[#2D5016] text-white sticky top-0 z-50 shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex justify-between items-center h-16">
         {/* Left: Logo */}
 
         <div className="flex items-center">
           <Image
             src="/images/logo.png"
-            className="mt-2 -mr-5"
+            className="mt-2 -ml-5 -mr-5"
             width={70}
             height={70}
             alt="logo"
