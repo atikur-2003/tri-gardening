@@ -61,7 +61,7 @@ const products = [
   },
 ];
 
-const page = () => {
+const ProductPage = () => {
   const renderStars = (rating) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
@@ -81,11 +81,11 @@ const page = () => {
         <div>
           <div className="max-w-7xl mx-auto  py-3">
             <nav className="flex flex-wrap gap-6 text-sm font-medium text-gray-700">
-              <Link href="#" className="hover:text-[#7A9B57]">
+              <Link href="/" className="hover:text-[#7A9B57]">
                 Home
               </Link>
               <Link
-                href="#"
+                href="/products"
                 className="text-[#7A9B57] -mt-1 underline font-bold"
               >
                 Plants
@@ -96,13 +96,13 @@ const page = () => {
               <Link href="#" className="hover:text-[#7A9B57]">
                 Fertilizers
               </Link>
-              <Link href="#" className="hover:text-[#7A9B57]">
+              <Link href="/plant-seed-page" className="hover:text-[#7A9B57]">
                 Seeds
               </Link>
-              <Link href="#" className="hover:text-[#7A9B57]">
+              <Link href="/medicine-page" className="hover:text-[#7A9B57]">
                 Medicine
               </Link>
-              <Link href="#" className="hover:text-[#7A9B57]">
+              <Link href="/equipments-page" className="hover:text-[#7A9B57]">
                 Equipments
               </Link>
             </nav>
@@ -343,4 +343,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProductPage;

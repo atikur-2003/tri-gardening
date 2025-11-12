@@ -8,7 +8,7 @@ import RelatedProduct from "../shared/RelatedProduct";
 import UserRatings from "../shared/UserRatings";
 import UserReviews from "../shared/UserReviews";
 
-const ProductDetails = () => {
+const PlantSeedPage = () => {
   return (
     <>
       <div className="bg-white my-5 px-4 md:px-7 lg:px-10">
@@ -19,10 +19,7 @@ const ProductDetails = () => {
               <Link href="/" className="hover:text-[#7A9B57]">
                 Home
               </Link>
-              <Link
-                href="/products"
-                className="text-[#7A9B57] -mt-1 underline font-bold"
-              >
+              <Link href="/products" className="hover:text-[#7A9B57] ">
                 Plants
               </Link>
               <Link href="#" className="hover:text-[#7A9B57]">
@@ -31,13 +28,16 @@ const ProductDetails = () => {
               <Link href="#" className="hover:text-[#7A9B57]">
                 Fertilizers
               </Link>
-              <Link href="/plant-seed-page" className="hover:text-[#7A9B57]">
+              <Link
+                href="/plant-seed-page"
+                className="text-[#7A9B57] -mt-1 underline font-bold"
+              >
                 Seeds
               </Link>
               <Link href="/medicine-page" className="hover:text-[#7A9B57]">
                 Medicine
               </Link>
-              <Link href="/equipments-page" className="hover:text-[#7A9B57]">
+              <Link href="#" className="hover:text-[#7A9B57]">
                 Equipments
               </Link>
             </nav>
@@ -55,9 +55,11 @@ const ProductDetails = () => {
               Products
             </Link>
             <FaChevronRight className="w-4 h-4" />
-            <Link href='#' className=" hover:text-[#7A9B57]">Plants</Link>
+            <Link href="#" className=" hover:text-[#7A9B57]">
+              Medicine
+            </Link>
             <FaChevronRight className="w-4 h-4" />
-            <span className="text-[#7A9B57] font-medium">Golden Pothos</span>
+            <span className="text-[#7A9B57] font-medium">Seeds</span>
           </nav>
         </div>
       </div>
@@ -71,7 +73,7 @@ const ProductDetails = () => {
               {/* Main Image */}
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden">
                 <Image
-                  src="/images/golden-pothos1.png"
+                  src="/images/equipment1.png"
                   alt="Golden Pothos Plant"
                   width={500}
                   height={400}
@@ -87,7 +89,7 @@ const ProductDetails = () => {
                     className="bg-white rounded-2xl shadow-md overflow-hidden border-2 border-transparent hover:border-green-600 transition"
                   >
                     <Image
-                      src={`/images/golden-pothos${i}.jpg`}
+                      src={`/images/equipment${i}.png`}
                       alt={`Thumbnail ${i}`}
                       width={120}
                       height={120}
@@ -102,7 +104,7 @@ const ProductDetails = () => {
             <div className="lg:col-span-4 space-y-6">
               <div>
                 <h1 className="text-4xl font-bold text-gray-900">
-                  Golden Pothos
+                  Plant Tob
                 </h1>
 
                 {/* Rating */}
@@ -113,7 +115,7 @@ const ProductDetails = () => {
                     ))}
                   </div>
                   <span className="text-[#2D5016] font-semibold">
-                    (24 Reviews)
+                    (12 Reviews)
                   </span>
                   <span className="flex items-center gap-2 text-[#7A9B57] font-medium">
                     <span className="w-4 h-4 bg-[#7A9B57] rounded-full ml-5"></span>
@@ -129,16 +131,13 @@ const ProductDetails = () => {
                 <h3 className="font-semibold text-gray-800 mb-3">Size</h3>
                 <div className="flex gap-3">
                   <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] rounded-lg text-sm">
-                    Small
-                    <span className="text-[#404040]">৳ 240</span>
+                    50 +<span className="text-[#404040]">৳ 120</span>
                   </button>
                   <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 border-[#7A9B57] text-black rounded-lg text-sm font-medium">
-                    Medium
-                    <span className="text-[#404040]">৳ 350</span>
+                    150 +<span className="text-[#404040]">৳ 300</span>
                   </button>
                   <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] rounded-lg text-sm">
-                    Large
-                    <span className="text-[#404040]">৳450</span>
+                    500 +<span className="text-[#404040]">৳ 850</span>
                   </button>
                 </div>
               </div>
@@ -146,39 +145,27 @@ const ProductDetails = () => {
               {/* Include Pot */}
               <div>
                 <h3 className="font-semibold text-gray-800 mb-3">
-                  Include Pot
+                  Select Type
                 </h3>
                 <div className="flex gap-3">
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
-                    Small
-                    <span className="text-[#404040]">৳ 100</span>
+                  <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 border-[#7A9B57] text-black rounded-lg text-sm">
+                    Deshi
                   </button>
                   <button className=" flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
-                    Medium
-                    <span className="text-[#404040]">৳ 130</span>
+                    Hybrid F1
                   </button>
                   <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
-                    Large
-                    <span className="text-[#404040]">৳ 170</span>
+                    Baromashi
                   </button>
-                </div>
-              </div>
-
-              {/* Pot Color */}
-              <div>
-                <h3 className="font-semibold text-gray-800 mb-3">Pot Color</h3>
-                <div className="flex gap-4">
-                  <button className="w-8 h-8 bg-white border-2 border-gray-400 rounded-full"></button>
-                  <button className="w-8 h-8 bg-[#9E6431] rounded-full "></button>
                 </div>
               </div>
 
               {/* Bengali Description */}
               <div className="text-sm py-2 border-y border-[#B7B7B7]">
                 <span className="text-[#2D5016] font-medium mr-1 ">
-                  গোল্ডেন পাথোস (Golden Pothos / Epipremnum aureum) ঘর সাজানোর
-                  জন্য অন্যতম সেরা ও সহজে পরিচর্যা করা যায় এমন ইনডোর প্ল্যান্ট।
-                  এর হৃদয় আকৃতির
+                  সাধারণ লাল টমেটো কেন ফলাবেন, যখন আপনি একটি আস্ত রংধনু ফলাতে
+                  পারেন? বিগ রেইনবো হলো একটি অসাধারণ জাতের বিফস্টেক টমেটো, যা
+                  তার বিশাল
                 </span>
                 <span className="text-[#CC7722] font-medium">See more...</span>
               </div>
@@ -187,7 +174,7 @@ const ProductDetails = () => {
               <div className="mt-8">
                 <div className="flex justify-between items-center gap-5">
                   <span className="flex-1 mt-5 text-3xl font-bold text-[#CC7722]">
-                    ৳ 350
+                    ৳ 300
                   </span>
                   <div>
                     <p className="text-sm text-center mb-1">Quantity</p>
@@ -230,21 +217,20 @@ const ProductDetails = () => {
               {/* Actual Text */}
               <div className="text-[#2D5016] text-base leading-relaxed space-y-4">
                 <p>
-                  গোল্ডেন পথোস (Golden Pothos / Epipremnum aureum) – ঘর সাজানোর
-                  জন্য অন্যতম সেরা ও সহজে পরিচর্যা করা যায় এমন ইনডোর প্ল্যান্ট।
-                  এর হলুদ আকৃতির মার্বেল পাতায় সোনালি-সবুজ রঙের কম্বিনেশন থাকে,
-                  যা ঘরের কোনো কোণকেই করে তোলে উজ্জ্বল। এটি গাছটি খুবই সহনশীল—কম
-                  আলো, কম পানি, কম যত্নেও দিব্যি টিকে থাকে। এছাড়া এটি বায়ু
-                  শোধনকারী গাছ হিসেবে বিখ্যাত।
+                  সাধারণ লাল টমেটো কেন ফলাবেন, যখন আপনি একটি আস্ত রংধনু ফলাতে
+                  পারেন? বিগ রেইনবো হলো একটি অসাধারণ জাতের বিফস্টেক টমেটো, যা
+                  তার বিশাল আকার এবং আকর্ষণীয়, বহু-রঙা আবরণের জন্য বিখ্যাত।
+                  পাকার সাথে সাথে প্রতিটি টমেটো হলুদ, কমলা এবং গাঢ় লাল রঙের ছটায়
+                  এক একটি অনন্য শিল্পকর্মে পরিণত হয়, যা যেকোনো বাগানের প্রধান
+                  আকর্ষণ হয়ে ওঠে।
                 </p>
                 <p className="text-gray-500">
-                  গোল্ডেন পথোস খুব দ্রুত বাড়ে। ঝুলন্ত ঝুড়ি, শেলফ, বা টেবিলের
-                  ওপর রাখলে এর লতানো পাতা নিচে ঝুলে এসে অপরূপ সৌন্দর্য সৃষ্টি
-                  করে। বেশ কিছু গবেষণায় দেখা গেছে, এই গাছ ঘরের বাতাস থেকে
-                  ফরমালডিহাইড, বেনজিন, জাইলিনের মতো ক্ষতিকর গ্যাস শোষণ করে
-                  বাতাসকে বিশুদ্ধ রাখে। এটি একেবারেই নতুন গাছপ্রেমীদের জন্য
-                  আদর্শ। পানি দেওয়া ভুলে গেলেও রাগ করে না, আলো কম থাকলেও
-                  মানিয়ে নেয়। শুধু মাটি শুকিয়ে গেলে পানি দিন—এইটুকুই যত্ন!
+                  এর সৌন্দর্য শুধু বাইরেই নয়। কাটলে ভেতরে দেখবেন ঘন, মাংসল এবং
+                  খুব কম বীজসহ উজ্জ্বল সোনালী-কমলা শাঁস। এর স্বাদ অত্যন্ত মিষ্টি
+                  ও ফলের মতো, এবং এতে অ্যাসিডিটি কম, যা প্রতিটি কামড়ে গ্রীষ্মের
+                  রোদের নিখুঁত স্বাদ এনে দেয়। এই বিশাল আকারের টমেটোগুলো প্রতিটি
+                  প্রায় ২ পাউন্ড (৯০০ গ্রাম) পর্যন্ত হতে পারে, যার একটি স্লাইসই
+                  পুরো স্যান্ডউইচ ঢাকার জন্য যথেষ্ট!
                 </p>
               </div>
 
@@ -256,17 +242,17 @@ const ProductDetails = () => {
             </div>
           </div>
         </section>
-        {/* Releted Product */}
+        {/* Related Product */}
         <RelatedProduct />
 
         {/* User Review section */}
-        <UserRatings/>
+        <UserRatings />
 
         {/* user reviews section */}
-        <UserReviews/>
+        <UserReviews />
       </div>
     </>
   );
 };
 
-export default ProductDetails;
+export default PlantSeedPage;
