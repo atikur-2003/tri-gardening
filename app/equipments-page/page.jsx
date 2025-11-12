@@ -28,16 +28,13 @@ const PlantSeedPage = () => {
               <Link href="#" className="hover:text-[#7A9B57]">
                 Fertilizers
               </Link>
-              <Link
-                href="/plant-seed-page"
-                className="text-[#7A9B57] -mt-1 underline font-bold"
-              >
+              <Link href="/plant-seed-page" className="hover:text-[#7A9B57]te">
                 Seeds
               </Link>
               <Link href="/medicine-page" className="hover:text-[#7A9B57]">
                 Medicine
               </Link>
-              <Link href="#" className="hover:text-[#7A9B57]">
+              <Link href="#" className="xt-[#7A9B57] -mt-1 underline font-bold">
                 Equipments
               </Link>
             </nav>
@@ -59,7 +56,7 @@ const PlantSeedPage = () => {
               Medicine
             </Link>
             <FaChevronRight className="w-4 h-4" />
-            <span className="text-[#7A9B57] font-medium">Seeds</span>
+            <span className="text-[#7A9B57] font-medium">Golden Pothos</span>
           </nav>
         </div>
       </div>
@@ -103,9 +100,7 @@ const PlantSeedPage = () => {
             {/* Center: Product Info */}
             <div className="lg:col-span-4 space-y-6">
               <div>
-                <h1 className="text-4xl font-bold text-gray-900">
-                  Plant Tob
-                </h1>
+                <h1 className="text-4xl font-bold text-gray-900">Plant Tob</h1>
 
                 {/* Rating */}
                 <div className="flex items-center gap-3 my-5">
@@ -130,14 +125,20 @@ const PlantSeedPage = () => {
               <div>
                 <h3 className="font-semibold text-gray-800 mb-3">Size</h3>
                 <div className="flex gap-3">
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] rounded-lg text-sm">
-                    50 +<span className="text-[#404040]">৳ 120</span>
+                  <button className="flex flex-col gap-1 px-2 py-1 border border-[#CDCDCD] rounded-lg text-sm">
+                    6 Inch<span className="text-[#404040]">৳ 60</span>
                   </button>
-                  <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 border-[#7A9B57] text-black rounded-lg text-sm font-medium">
-                    150 +<span className="text-[#404040]">৳ 300</span>
+                  <button className="flex flex-col gap-1 px-2 py-1 bg-[#EDFFDA] border-2 border-[#7A9B57] text-black rounded-lg text-sm font-medium">
+                    8 Inch<span className="text-[#404040]">৳ 300</span>
                   </button>
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] rounded-lg text-sm">
-                    500 +<span className="text-[#404040]">৳ 850</span>
+                  <button className="flex flex-col gap-1 px-2 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                    10 Inch<span className="text-[#404040]">৳ 850</span>
+                  </button>
+                  <button className="flex flex-col gap-1 px-2 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                    12 Inch<span className="text-[#404040]">৳ 850</span>
+                  </button>
+                  <button className="flex flex-col gap-1 px-2 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                    16 Inch<span className="text-[#404040]">৳ 850</span>
                   </button>
                 </div>
               </div>
@@ -149,13 +150,16 @@ const PlantSeedPage = () => {
                 </h3>
                 <div className="flex gap-3">
                   <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 border-[#7A9B57] text-black rounded-lg text-sm">
-                    Deshi
+                    Plastic
                   </button>
                   <button className=" flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
-                    Hybrid F1
+                    Clay
                   </button>
                   <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
-                    Baromashi
+                    Cement
+                  </button>
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                    Terracota
                   </button>
                 </div>
               </div>
@@ -163,9 +167,9 @@ const PlantSeedPage = () => {
               {/* Bengali Description */}
               <div className="text-sm py-2 border-y border-[#B7B7B7]">
                 <span className="text-[#2D5016] font-medium mr-1 ">
-                  সাধারণ লাল টমেটো কেন ফলাবেন, যখন আপনি একটি আস্ত রংধনু ফলাতে
-                  পারেন? বিগ রেইনবো হলো একটি অসাধারণ জাতের বিফস্টেক টমেটো, যা
-                  তার বিশাল
+                  আপনার প্রিয় গাছের চারা তৈরি করতে চান? TakeRoot রুট হরমোন
+                  আপনার জন্য আদর্শ সমাধান! এটি নতুন গাছের কাটিং থেকে সফলভাবে
+                  শিকড় গজাতে সাহায্য
                 </span>
                 <span className="text-[#CC7722] font-medium">See more...</span>
               </div>
@@ -174,7 +178,7 @@ const PlantSeedPage = () => {
               <div className="mt-8">
                 <div className="flex justify-between items-center gap-5">
                   <span className="flex-1 mt-5 text-3xl font-bold text-[#CC7722]">
-                    ৳ 300
+                    ৳ 200
                   </span>
                   <div>
                     <p className="text-sm text-center mb-1">Quantity</p>
@@ -217,20 +221,17 @@ const PlantSeedPage = () => {
               {/* Actual Text */}
               <div className="text-[#2D5016] text-base leading-relaxed space-y-4">
                 <p>
-                  সাধারণ লাল টমেটো কেন ফলাবেন, যখন আপনি একটি আস্ত রংধনু ফলাতে
-                  পারেন? বিগ রেইনবো হলো একটি অসাধারণ জাতের বিফস্টেক টমেটো, যা
-                  তার বিশাল আকার এবং আকর্ষণীয়, বহু-রঙা আবরণের জন্য বিখ্যাত।
-                  পাকার সাথে সাথে প্রতিটি টমেটো হলুদ, কমলা এবং গাঢ় লাল রঙের ছটায়
-                  এক একটি অনন্য শিল্পকর্মে পরিণত হয়, যা যেকোনো বাগানের প্রধান
-                  আকর্ষণ হয়ে ওঠে।
+                  আপনার প্রিয় গাছের চারা তৈরি করতে চান? TakeRoot রুট হরমোন
+                  আপনার জন্য আদর্শ সমাধান! এটি নতুন গাছের কাটিং থেকে সফলভাবে
+                  শিকড় গজাতে সাহায্য করে, আপনার বাগানকে আরও সমৃদ্ধ করে তোলে ।
                 </p>
                 <p className="text-gray-500">
-                  এর সৌন্দর্য শুধু বাইরেই নয়। কাটলে ভেতরে দেখবেন ঘন, মাংসল এবং
-                  খুব কম বীজসহ উজ্জ্বল সোনালী-কমলা শাঁস। এর স্বাদ অত্যন্ত মিষ্টি
-                  ও ফলের মতো, এবং এতে অ্যাসিডিটি কম, যা প্রতিটি কামড়ে গ্রীষ্মের
-                  রোদের নিখুঁত স্বাদ এনে দেয়। এই বিশাল আকারের টমেটোগুলো প্রতিটি
-                  প্রায় ২ পাউন্ড (৯০০ গ্রাম) পর্যন্ত হতে পারে, যার একটি স্লাইসই
-                  পুরো স্যান্ডউইচ ঢাকার জন্য যথেষ্ট!
+                  ব্যবহারবিধি : <br />
+                  <br />
+                  ১. কাটিং প্রস্তুত করুন: সুস্থ ও সতেজ গাছের একটি কাটিং নিন ।
+                  নিচের দিকের পাতাগুলি অপসারন করুন। <br />
+                  ২. হরমোন প্রয়োগ: কাটিং এর কাটা অংসটি TakeRoot রুট হরমোন পাওদার
+                  আলতো করে ডুবিয়ে নিন ।
                 </p>
               </div>
 
