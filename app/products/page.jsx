@@ -76,30 +76,33 @@ const page = () => {
 
   return (
     <>
-      <div className="bg-white my-5 px-4 md:px-10 lg:px-14">
+      <div className="bg-white my-5 px-4 md:px-7 lg:px-10">
         {/* Top Navbar - Light Green */}
         <div>
           <div className="max-w-7xl mx-auto  py-3">
             <nav className="flex flex-wrap gap-6 text-sm font-medium text-gray-700">
-              <Link href="#" className="hover:text-green-800">
+              <Link href="#" className="hover:text-[#7A9B57]">
                 Home
               </Link>
-              <Link href="#" className="text-green-800 font-bold">
+              <Link
+                href="#"
+                className="text-[#7A9B57] -mt-1 underline font-bold"
+              >
                 Plants
               </Link>
-              <Link href="#" className="hover:text-green-800">
+              <Link href="#" className="hover:text-[#7A9B57]">
                 Tools
               </Link>
-              <Link href="#" className="hover:text-green-800">
+              <Link href="#" className="hover:text-[#7A9B57]">
                 Fertilizers
               </Link>
-              <Link href="#" className="hover:text-green-800">
+              <Link href="#" className="hover:text-[#7A9B57]">
                 Seeds
               </Link>
-              <Link href="#" className="hover:text-green-800">
+              <Link href="#" className="hover:text-[#7A9B57]">
                 Medicine
               </Link>
-              <Link href="#" className="hover:text-green-800">
+              <Link href="#" className="hover:text-[#7A9B57]">
                 Equipments
               </Link>
             </nav>
@@ -107,27 +110,26 @@ const page = () => {
         </div>
 
         {/* Breadcrumb */}
-        
-          <div className="max-w-7xl mx-auto py-4 text-sm text-gray-600">
-            <nav className="flex items-center gap-2">
-              <Link href="/" className="hover:text-green-700">
-                Home
-              </Link>
-              <FaChevronRight className="w-4 h-4" />
-              <Link href="/products" className="hover:text-green-700">
-                Products
-              </Link>
-              <FaChevronRight className="w-4 h-4" />
-              <span className="text-green-700 font-medium">Plants</span>
-            </nav>
-          </div>
+        <div className="max-w-7xl mx-auto py-4 text-sm text-gray-600">
+          <nav className="flex items-center gap-2">
+            <Link href="/" className="hover:text-green-700">
+              Home
+            </Link>
+            <FaChevronRight className="w-4 h-4" />
+            <Link href="/products" className="hover:text-[#7A9B57]">
+              Products
+            </Link>
+            <FaChevronRight className="w-4 h-4" />
+            <span className="text-[#7A9B57] font-medium">Plants</span>
+          </nav>
+        </div>
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-14 py-10 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 md:px-7 lg:px-10 py-10 bg-gray-50">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar - Filters */}
-          <aside className="lg:w-80 bg-white rounded-2xl p-6 shadow-sm min-h-[40%]">
+          <aside className="lg:w-80 bg-white rounded-2xl p-6 shadow-sm max-h-180">
             <h3 className="font-bold text-lg mb-6 text-gray-900">
               Filter Products
             </h3>
@@ -240,7 +242,7 @@ const page = () => {
               </ul>
             </div>
 
-            <button className="w-full bg-[#7A9B57] cursor-pointer text-white py-3 rounded-lg font-semibold hover:bg-green-800 transition">
+            <button className="w-full bg-[#7A9B57] cursor-pointer text-white py-3 rounded-lg font-semibold hover:bg-[#2D5016] transition">
               Apply Filters
             </button>
           </aside>
@@ -268,11 +270,11 @@ const page = () => {
             </div>
 
             {/* Product Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {products.map((item) => (
                 <div
                   key={item.id}
-                  className=" relative bg-white rounded-2xl overflow-hidden shadow-sm cursor-pointer hover:shadow-xl transition-all duration-300"
+                  className="group relative bg-white rounded-2xl overflow-hidden shadow-sm cursor-pointer hover:shadow-xl transition-all duration-300"
                 >
                   {/* Product Image*/}
                   <div className="relative w-full h-64">
@@ -302,10 +304,26 @@ const page = () => {
 
                     {/* Default Add to Cart */}
                     <Link
-                      href="#"
+                      href="/product-details"
                       className="inline-block w-full text-center mt-4 bg-[#2D5016] text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-[#15803d] transition"
                     >
                       Add to Cart
+                    </Link>
+                  </div>
+                  
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-white/40 backdrop-blur-xs flex flex-col items-center justify-between pt-8 opacity-0 group-hover:opacity-100  transition-all duration-300">
+                    <Link
+                      href="/product-details"
+                      className="bg-[#2D5016] cursor-pointer text-white px-5 py-2 rounded-lg font-medium transition"
+                    >
+                      Add to Cart
+                    </Link>
+                    <Link
+                      href="/product-details"
+                      className="bg-[#7A9B57] text-center text-white w-full py-4 rounded-b-lg font-medium cursor-pointer transition"
+                    >
+                      View Details
                     </Link>
                   </div>
                 </div>
@@ -314,7 +332,7 @@ const page = () => {
 
             {/* Load More Button */}
             <div className="mt-12 text-center">
-              <button className="bg-[#7A9B57] text-white px-10 py-4 rounded-lg cursor-pointer font-semibold hover:bg-green-800 transition shadow-lg">
+              <button className="bg-[#7A9B57] text-white px-10 py-4 rounded-lg cursor-pointer font-semibold hover:bg-[#2D5016] transition shadow-lg">
                 Load More Products
               </button>
             </div>
