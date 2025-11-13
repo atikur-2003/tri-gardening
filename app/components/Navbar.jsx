@@ -15,7 +15,7 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "Products", path: "/products" },
     { name: "Blog", path: "/blog" },
-    { name: "Plant Clinic", path: "/plant-clinic" },
+    { name: "Plant Clinic", path: "/" },
   ];
 
   return (
@@ -62,9 +62,16 @@ const Navbar = () => {
           </div>
 
           {/* Icons */}
-          <div className="flex items-center space-x-4 ml-2">
-            <PiShoppingCartSimpleFill className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" />
-            <FaUser className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" />
+          <div className="flex items-center gap-5 ">
+            <div className="relative">
+              <Link href="/cart-page">
+                <PiShoppingCartSimpleFill className="w-7 h-7 hover:text-[#FFD166]" />
+              </Link>
+              <p className="absolute -right-4 -top-2 p-2 w-6 h-6 flex items-center justify-center rounded-full text-[#F5F5DC] bg-[#CC7722]">
+                3
+              </p>
+            </div>
+            <FaUser className="w-7 h-7 hover:text-[#FFD166] cursor-pointer" />
           </div>
         </div>
 
@@ -107,11 +114,19 @@ const Navbar = () => {
                 placeholder="Search plants, tools"
                 className=" border border-white placeholder:text-white placeholder:text-base text-white px-3 py-1 rounded-full focus:outline-none"
               />
-              <IoIosSearch size={20} className="absolute top-2 right-27 mr-2 text-[#B7B7B7]" />
+              <IoIosSearch
+                size={20}
+                className="absolute top-2 right-27 mr-2 text-[#B7B7B7]"
+              />
             </div>
 
             <div className="flex items-center justify-center space-x-6 pt-2">
-              <PiShoppingCartSimpleFill className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" />
+              <div className="relative">
+                <PiShoppingCartSimpleFill className="w-7 h-7 hover:text-[#FFD166] cursor-pointer" />
+                <p className="absolute -right-4 -top-2 p-2 w-6 h-6 flex items-center justify-center rounded-full text-[#F5F5DC] bg-[#CC7722]">
+                  3
+                </p>
+              </div>
               <FaUser className="w-5 h-5 hover:text-[#FFD166] cursor-pointer" />
             </div>
           </div>

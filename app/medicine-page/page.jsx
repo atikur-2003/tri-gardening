@@ -133,13 +133,13 @@ const MedicinePage = () => {
               <div>
                 <h3 className="font-semibold text-gray-800 mb-3">Size</h3>
                 <div className="flex gap-3">
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] font-medium rounded-lg text-sm">
                     25 g<span className="text-[#404040]">৳ 100</span>
                   </button>
                   <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 border-[#7A9B57] text-black rounded-lg text-sm font-medium">
                     50 g<span className="text-[#404040]">৳ 200</span>
                   </button>
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] font-medium rounded-lg text-sm">
                     100 g<span className="text-[#404040]">৳ 350</span>
                   </button>
                 </div>
@@ -151,13 +151,13 @@ const MedicinePage = () => {
                   Select Type
                 </h3>
                 <div className="flex gap-3">
-                  <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 border-[#7A9B57] text-black rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 font-medium border-[#7A9B57] text-black rounded-lg text-sm">
                     Powder
                   </button>
-                  <button className=" flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                  <button className=" flex flex-col gap-1 px-4 py-2 border border-gray-300 font-medium rounded-lg text-sm">
                     Liquid
                   </button>
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 font-medium rounded-lg text-sm">
                     Gel
                   </button>
                 </div>

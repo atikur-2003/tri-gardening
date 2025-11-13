@@ -130,13 +130,13 @@ const PlantSeedPage = () => {
               <div>
                 <h3 className="font-semibold text-gray-800 mb-3">Size</h3>
                 <div className="flex gap-3">
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] font-medium rounded-lg text-sm">
                     50 +<span className="text-[#404040]">৳ 120</span>
                   </button>
                   <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 border-[#7A9B57] text-black rounded-lg text-sm font-medium">
                     150 +<span className="text-[#404040]">৳ 300</span>
                   </button>
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] font-medium rounded-lg text-sm">
                     500 +<span className="text-[#404040]">৳ 850</span>
                   </button>
                 </div>
@@ -148,13 +148,13 @@ const PlantSeedPage = () => {
                   Select Type
                 </h3>
                 <div className="flex gap-3">
-                  <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 border-[#7A9B57] text-black rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 font-medium border-[#7A9B57] text-black rounded-lg text-sm">
                     Deshi
                   </button>
-                  <button className=" flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                  <button className=" flex flex-col gap-1 px-4 py-2 border border-gray-300 font-medium rounded-lg text-sm">
                     Hybrid F1
                   </button>
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 font-medium rounded-lg text-sm">
                     Baromashi
                   </button>
                 </div>

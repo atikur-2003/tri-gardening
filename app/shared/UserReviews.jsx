@@ -199,7 +199,7 @@ const UserReviews = () => {
                       </span>
                       <span className="text-[#7A9B57]">
                         {" "}
-                        1 Week ago (1 August, 2025)
+                        2 Week ago (1 August, 2025)
                       </span>
                     </div>
                   </div>

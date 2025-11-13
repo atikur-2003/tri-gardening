@@ -34,7 +34,7 @@ const PlantSeedPage = () => {
               <Link href="/medicine-page" className="hover:text-[#7A9B57]">
                 Medicine
               </Link>
-              <Link href="#" className="xt-[#7A9B57] -mt-1 underline font-bold">
+              <Link href="#" className="text-[#7A9B57] -mt-1 underline font-bold">
                 Equipments
               </Link>
             </nav>
@@ -125,19 +125,19 @@ const PlantSeedPage = () => {
               <div>
                 <h3 className="font-semibold text-gray-800 mb-3">Size</h3>
                 <div className="flex gap-3">
-                  <button className="flex flex-col gap-1 px-2 py-1 border border-[#CDCDCD] rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-2 py-1 border border-[#CDCDCD] font-medium rounded-lg text-sm">
                     6 Inch<span className="text-[#404040]">৳ 60</span>
                   </button>
                   <button className="flex flex-col gap-1 px-2 py-1 bg-[#EDFFDA] border-2 border-[#7A9B57] text-black rounded-lg text-sm font-medium">
                     8 Inch<span className="text-[#404040]">৳ 300</span>
                   </button>
-                  <button className="flex flex-col gap-1 px-2 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-2 py-2 border border-[#CDCDCD] font-medium rounded-lg text-sm">
                     10 Inch<span className="text-[#404040]">৳ 850</span>
                   </button>
-                  <button className="flex flex-col gap-1 px-2 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-2 py-2 border border-[#CDCDCD] font-medium rounded-lg text-sm">
                     12 Inch<span className="text-[#404040]">৳ 850</span>
                   </button>
-                  <button className="flex flex-col gap-1 px-2 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-2 py-2 border border-[#CDCDCD] font-medium rounded-lg text-sm">
                     16 Inch<span className="text-[#404040]">৳ 850</span>
                   </button>
                 </div>
@@ -149,16 +149,16 @@ const PlantSeedPage = () => {
                   Select Type
                 </h3>
                 <div className="flex gap-3">
-                  <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 border-[#7A9B57] text-black rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 bg-[#EDFFDA] border-2 font-medium border-[#7A9B57] text-black rounded-lg text-sm">
                     Plastic
                   </button>
-                  <button className=" flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                  <button className=" flex flex-col gap-1 px-4 py-2 border border-gray-300 font-medium rounded-lg text-sm">
                     Clay
                   </button>
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 font-medium rounded-lg text-sm">
                     Cement
                   </button>
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 font-medium rounded-lg text-sm">
                     Terracota
                   </button>
                 </div>
@@ -184,7 +184,7 @@ const PlantSeedPage = () => {
                     <p className="text-sm text-center mb-1">Quantity</p>
                     <div className="flex items-center gap-7 px-3 py-2 border border-gray-300 rounded-lg">
                       <button className="text-[#2D5016] text-2xl">-</button>
-                      <span className="font-semibold text-xl">1</span>
+                      <span className="font-semibold text-xl">2</span>
                       <button className="text-[#2D5016] text-2xl">+</button>
                     </div>
                   </div>

@@ -101,7 +101,7 @@ const ProductDetails = () => {
             {/* Center: Product Info */}
             <div className="lg:col-span-4 space-y-6">
               <div>
-                <h1 className="text-4xl font-bold text-gray-900">
+                <h1 className="text-3xl font-bold text-gray-900">
                   Golden Pothos
                 </h1>
 
@@ -128,7 +128,7 @@ const ProductDetails = () => {
               <div>
                 <h3 className="font-semibold text-gray-800 mb-3">Size</h3>
                 <div className="flex gap-3">
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] font-medium rounded-lg text-sm">
                     Small
                     <span className="text-[#404040]">৳ 240</span>
                   </button>
@@ -136,7 +136,7 @@ const ProductDetails = () => {
                     Medium
                     <span className="text-[#404040]">৳ 350</span>
                   </button>
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-[#CDCDCD] font-medium rounded-lg text-sm">
                     Large
                     <span className="text-[#404040]">৳450</span>
                   </button>
@@ -149,15 +149,15 @@ const ProductDetails = () => {
                   Include Pot
                 </h3>
                 <div className="flex gap-3">
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 font-medium rounded-lg text-sm">
                     Small
                     <span className="text-[#404040]">৳ 100</span>
                   </button>
-                  <button className=" flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 font-medium rounded-lg text-sm">
                     Medium
                     <span className="text-[#404040]">৳ 130</span>
                   </button>
-                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                  <button className="flex flex-col gap-1 px-4 py-2 border border-gray-300 font-medium rounded-lg text-sm">
                     Large
                     <span className="text-[#404040]">৳ 170</span>
                   </button>
