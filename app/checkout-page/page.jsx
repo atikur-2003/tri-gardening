@@ -271,9 +271,11 @@ const CheckoutPage = () => {
                   </div>
                 </div>
 
+                <Link href='/user-checkout-page'>
                 <button className="w-full mt-8 bg-[#2D5016] text-[#F5F5DC] py-5 rounded-xl font-bold text-lg shadow-lg">
                   Proceed to Checkout
                 </button>
+                </Link>
               </div>
             </div>
           </div>
